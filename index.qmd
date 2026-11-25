@@ -1,9 +1,13 @@
-# Preface {.unnumbered}
+# Welkom! {.unnumbered}
 
-This is a Quarto book.
+### Acknowledgements
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+### License
 
-```{r}
-1 + 1
-```
+This book licensed under the Creative Commons Attribution-NonCommercial-NoDerivs 4.0 License.
+
+\
+Good luck, and happy coding!
+
+\
+Ludovic De Cuypere

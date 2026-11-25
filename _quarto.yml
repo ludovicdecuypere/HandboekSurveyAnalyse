@@ -1,25 +1,43 @@
 project:
   type: book
+  output-dir: docs
 
 book:
-  title: "HandboekSurveyAnalyse"
-  author: "Norah Jones"
-  date: "25/11/2026"
+  title: "Handboek Survey analyse"
+  date: 2026-11-25
+  date-format: long
+  author: 
+  - name: Ludovic De Cuypere
+    id: LDC
+    email: Ludovic.DeCuypere@UGent.be
+    affiliation: 
+      - name: Ghent University - Vrije Universiteit Brussel
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
+    - H1_Inleiding.qmd
+    - H2_EthischeAspecten.qmd
+    - H3_Stappenplan.qmd
+    - H4_Data.qmd
+    - H5_R.qmd
+    - H6_DataVoorbereiding.qmd
+    - H7_Univariaat.qmd
+    - H8_Bivariaat.qmd
+    - H9_Testen.qmd
+    - H10_Clusteren.qmd
+    - H11_Voorspellen.qmd
     - references.qmd
-
 bibliography: references.bib
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
-  pdf:
-    documentclass: scrreprt
+    theme: [Journal, mystyle_main.scss]
+    mainfont: EB+Garamond
+    toc: true
+    toc-font-size: 0.9rem
+    link-external-icon: true
+    link-external-newwindow: true
+    
+editor: source
 
-editor: visual
-
+execute:
+  freeze: auto
